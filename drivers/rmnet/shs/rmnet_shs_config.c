@@ -1,4 +1,5 @@
 /* Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (C) 2019 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -75,6 +76,12 @@ void __exit rmnet_shs_module_exit(void)
 		rmnet_shs_exit();
 	}
 	unregister_netdevice_notifier(&rmnet_shs_dev_notifier);
+
+	if (rmnet_shs_cfg.rmnet_shs_init_complete) {
+		rmnet_shs_cancel_table();
+		rmnet_shs_wq_exit();
+		rmnet_shs_exit();
+	}
 	if (unlikely(rmnet_shs_debug))
 		pr_info("Exiting rmnet_shs module");
 	trace_rmnet_shs_high(RMNET_SHS_MODULE, RMNET_SHS_MODULE_EXIT,
