@@ -1,4 +1,5 @@
 /* Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2020 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -318,12 +319,10 @@ rmnet_perf_opt_add_flow_subfrags(struct rmnet_perf_opt_flow_node *flow_node)
 
 		new_frag = pkt_list[i].frag_desc;
 		/* Pull headers if they're there */
-		if (new_frag->hdr_ptr == rmnet_frag_data_ptr(new_frag)) {
-			if (!rmnet_frag_pull(new_frag, perf->rmnet_port,
-					     flow_node->ip_len +
-					     flow_node->trans_len))
-				continue;
-		}
+		if (new_frag->hdr_ptr == rmnet_frag_data_ptr(new_frag))
+			rmnet_frag_pull(new_frag, perf->rmnet_port,
+					flow_node->ip_len +
+					flow_node->trans_len);
 
 		/* Move the fragment onto the subfrags list */
 		list_move_tail(&new_frag->list, &head_frag->sub_frags);
