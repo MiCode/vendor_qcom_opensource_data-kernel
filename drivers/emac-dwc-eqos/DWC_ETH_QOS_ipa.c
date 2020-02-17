@@ -1,4 +1,5 @@
 /* Copyright (c) 2017-2019, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2020 XiaoMi, Inc.
 *
 * Redistribution and use in source and binary forms, with or without
 * modification, are permitted provided that the following conditions are
@@ -684,19 +685,15 @@ static void ntn_ipa_notify_cb(void *priv, enum ipa_dp_evt_type evt,
 
 		/* Submit packet to network stack */
 		/* If its a ping packet submit it via rx_ni else use rx */
-		/* If NAPI is enabled call receive_skb */
-		if(ipa_get_lan_rx_napi()){
-			stat = netif_receive_skb(skb);
-		} else {
-			if (ip_hdr->protocol == IPPROTO_ICMP) {
-				stat = netif_rx_ni(skb);
-			} else if ((pdata->dev->stats.rx_packets %
+		if (ip_hdr->protocol == IPPROTO_ICMP) {
+			stat = netif_rx_ni(skb);
+		} else if ((pdata->dev->stats.rx_packets %
 				IPA_ETH_RX_SOFTIRQ_THRESH) == 0){
-				stat = netif_rx_ni(skb);
-			} else {
-				stat = netif_rx(skb);
-			}
+			stat = netif_rx_ni(skb);
+		} else {
+			stat = netif_rx(skb);
 		}
+
 		if(stat == NET_RX_DROP) {
 			pdata->dev->stats.rx_dropped++;
 		} else {
