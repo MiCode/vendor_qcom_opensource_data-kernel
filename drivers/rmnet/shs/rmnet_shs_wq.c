@@ -1,4 +1,4 @@
-/* Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2018-2020 The Linux Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -455,9 +455,6 @@ static u64 rmnet_shs_wq_get_flow_avg_pps(struct rmnet_shs_wq_hstat_s *hnode)
 		/* More weight to current value */
 		new_weight = rmnet_shs_wq_tuning;
 		old_weight = 100 - rmnet_shs_wq_tuning;
-	} else {
-		old_weight = rmnet_shs_wq_tuning;
-		new_weight = 100 - rmnet_shs_wq_tuning;
 	}
 
 	/* computing weighted average per flow, if the flow has just started,
@@ -1234,6 +1231,7 @@ int rmnet_shs_wq_check_cpu_move_for_ep(u16 current_cpu, u16 dest_cpu,
 int rmnet_shs_wq_try_to_move_flow(u16 cur_cpu, u16 dest_cpu, u32 hash_to_move,
 				  u32 sugg_type)
 {
+	unsigned long flags;
 	struct rmnet_shs_wq_ep_s *ep;
 
 	if (cur_cpu >= MAX_CPUS || dest_cpu >= MAX_CPUS) {
@@ -1245,6 +1243,7 @@ int rmnet_shs_wq_try_to_move_flow(u16 cur_cpu, u16 dest_cpu, u32 hash_to_move,
 	 * on it if is online, rps mask, isolation, etc. then make
 	 * suggestion to change the cpu for the flow by passing its hash
 	 */
+	spin_lock_irqsave(&rmnet_shs_ep_lock, flags);
 	list_for_each_entry(ep, &rmnet_shs_wq_ep_tbl, ep_list_id) {
 		if (!ep)
 			continue;
@@ -1266,9 +1265,13 @@ int rmnet_shs_wq_try_to_move_flow(u16 cur_cpu, u16 dest_cpu, u32 hash_to_move,
 			rm_err("SHS_FDESC: >> flow 0x%x was suggested to"
 			       " move from cpu[%d] to cpu[%d] sugg_type [%d]",
 			       hash_to_move, cur_cpu, dest_cpu, sugg_type);
+
+			spin_unlock_irqrestore(&rmnet_shs_ep_lock, flags);
 			return 1;
 		}
 	}
+
+	spin_unlock_irqrestore(&rmnet_shs_ep_lock, flags);
 	return 0;
 }
 
@@ -1277,8 +1280,10 @@ int rmnet_shs_wq_set_flow_segmentation(u32 hash_to_set, u8 seg_enable)
 {
 	struct rmnet_shs_skbn_s *node_p;
 	struct rmnet_shs_wq_hstat_s *hstat_p;
+	unsigned long ht_flags;
 	u16 bkt;
 
+	spin_lock_irqsave(&rmnet_shs_ht_splock, ht_flags);
 	hash_for_each(RMNET_SHS_HT, bkt, node_p, list) {
 		if (!node_p)
 			continue;
@@ -1300,8 +1305,10 @@ int rmnet_shs_wq_set_flow_segmentation(u32 hash_to_set, u8 seg_enable)
 				0xDEF, 0xDEF, hstat_p, NULL);
 
 		node_p->hstats->segment_enable = seg_enable;
+		spin_unlock_irqrestore(&rmnet_shs_ht_splock, ht_flags);
 		return 1;
 	}
+	spin_unlock_irqrestore(&rmnet_shs_ht_splock, ht_flags);
 
 	rm_err("SHS_HT: >> segmentation on hash 0x%x enable %u not set - hash not found",
 	       hash_to_set, seg_enable);
@@ -1941,9 +1948,6 @@ void rmnet_shs_wq_update_stats(void)
 	}
 
 	rmnet_shs_wq_refresh_new_flow_list();
-	/*Invoke after both the locks are released*/
-	rmnet_shs_wq_cleanup_hash_tbl(PERIODIC_CLEAN);
-	rmnet_shs_wq_debug_print_flows();
 }
 
 void rmnet_shs_wq_process_wq(struct work_struct *work)
@@ -1957,6 +1961,10 @@ void rmnet_shs_wq_process_wq(struct work_struct *work)
 	spin_lock_irqsave(&rmnet_shs_ep_lock, flags);
 	rmnet_shs_wq_update_stats();
 	spin_unlock_irqrestore(&rmnet_shs_ep_lock, flags);
+
+        /*Invoke after both the locks are released*/
+        rmnet_shs_wq_cleanup_hash_tbl(PERIODIC_CLEAN);
+        rmnet_shs_wq_debug_print_flows();
 
 	queue_delayed_work(rmnet_shs_wq, &rmnet_shs_delayed_wq->wq,
 					rmnet_shs_wq_frequency);
