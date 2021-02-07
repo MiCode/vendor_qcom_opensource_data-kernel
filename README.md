@@ -15,3 +15,4 @@
 | surya-q-oss | Redmi POCO X3 | Android Q | LA.UM.8.9.r1-09300-SM6xx.0 | [surya-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/surya-q-oss) |
 | umi-q-oss | Mi 10 Pro, Mi 10 | Android Q | LA.UM.8.12.r1-06000-sm8250.0 | [umi-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/umi-q-oss) |
 | vangogh-q-oss | Mi 10 Lite 5G, Mi 10 Lite Zoom | Android Q | LA.UM.8.13.r1-04700-SAIPAN.0 | [vangogh-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/vangogh-q-oss) |
+| violet-q-oss | Redmi Note 7 Pro | Android Q | LA.UM.8.9.r1-04400-SM6xx.0-1 | [violet-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/violet-q-oss) |
