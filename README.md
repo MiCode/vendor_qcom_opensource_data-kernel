@@ -11,6 +11,7 @@
 | ginkgo-q-oss | Redmi Note 8, Redmi Note 8T | Android Q | LA.UM.8.11.r1-02400-NICOBAR.0 | [ginkgo-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/ginkgo-q-oss) |
 | gram-q-oss | MI POCO M2 Pro,Redmi Note 9 Pro,Redmi Note 9 Pro Max | Android Q | LA.UM.8.9.r1-07100-SM6xx.0 | [gram-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/gram-q-oss) |
 | laurus-q-oss | MI CC 9e | Android Q | LA.UM.8.11.r1-01200-NICOBAR.0-2 | [laurus-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/laurus-q-oss) |
+| laurel-r-oss | Mi A3 | Android R | LA.UM.9.11.r1-02100-NICOBAR.0 | [laurel-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/laurel-r-oss) |
 | lmi-q-oss | Redmi K30 Pro| Android Q | LA.UM.8.12.r1-06000-sm8250.0 | [lmi-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/lmi-q-oss) |
 | lime-q-oss | Redmi Note 9 4G,Redmi POCO M3 | Android Q | LA.UM.8.15.r1-06600-KAMORTA.0 | [lime-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/lime-q-oss) |
 | mojito-r-oss | Redmi Note 10 | Android R | LA.UM.9.1.r1-07700-SMxxx0.0 | [mojito-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/mojito-r-oss) |
