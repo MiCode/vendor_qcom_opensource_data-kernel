@@ -16,6 +16,7 @@
 | lmi-q-oss | Redmi K30 Pro| Android Q | LA.UM.8.12.r1-06000-sm8250.0 | [lmi-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/lmi-q-oss) |
 | lime-q-oss | Redmi Note 9 4G,Redmi POCO M3 | Android Q | LA.UM.8.15.r1-06600-KAMORTA.0 | [lime-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/lime-q-oss) |
 | mojito-r-oss | Redmi Note 10 | Android R | LA.UM.9.1.r1-07700-SMxxx0.0 | [mojito-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/mojito-r-oss) |
+| nabu-r-oss | Xiaomi Pad 5 | Android R | LA.UM.9.1.r1-07000-SMxxx0.0 | [nabu-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/nabu-r-oss) |
 | phoenix-q-oss | Redmi K30, Redmi K20 | Android Q | LA.UM.8.9.r1-03800-sm6150.0 | [phoenix-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/phoenix-q-oss) |
 | phoenix-r-oss | Redmi K20, Redmi K30, MI Note 10 Lite, MI CC9 Pro | Android R | LA.UM.9.1.r1-06700-SMxxx0.0-1 | [phoenix-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/phoenix-r-oss) |
 | picasso-q-oss | Redmi K30 5G | Android Q | LA.UM.8.13.r1-03300-SAIPAN.0 | [picasso-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/picasso-q-oss) |
