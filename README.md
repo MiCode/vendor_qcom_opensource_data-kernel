@@ -22,6 +22,7 @@
 | phoenix-r-oss | Redmi K20, Redmi K30, MI Note 10 Lite, MI CC9 Pro | Android R | LA.UM.9.1.r1-06700-SMxxx0.0-1 | [phoenix-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/phoenix-r-oss) |
 | picasso-q-oss | Redmi K30 5G | Android Q | LA.UM.8.13.r1-03300-SAIPAN.0 | [picasso-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/picasso-q-oss) |
 | picasso-r-oss | Mi 10 Lite 5G, Redmi K30 5G, Mi 10 Lite Zoom | Android R | LA.UM.9.12.r1-08000-SMxx50.0 | [picasso-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/picasso-r-oss) |
+| pipa-t-oss | Xiaomi Pad 6 | Android T | LA.UM.9.12.r1-13300-SMxx50.QSSI12.0-1 | [pipa-t-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/pipa-t-oss) |
 | psyche-r-oss | Mi 12X | Android R | LA.UM.9.12.r1-08000-SMxx50.0 | [psyche-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/psyche-r-oss) |
 | surya-q-oss | Redmi POCO X3 | Android Q | LA.UM.8.9.r1-09300-SM6xx.0 | [surya-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/surya-q-oss) |
 | sweet-r-oss | Redmi Note 10 Pro | Android R | LA.UM.9.1.r1-06700-SMxxx0.0-1 | [sweet-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/sweet-r-oss) |
