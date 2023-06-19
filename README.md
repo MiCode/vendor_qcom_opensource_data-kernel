@@ -32,3 +32,4 @@
 | vangogh-q-oss | Mi 10 Lite 5G, Mi 10 Lite Zoom | Android Q | LA.UM.8.13.r1-04700-SAIPAN.0 | [vangogh-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/vangogh-q-oss) |
 | vayu-r-oss | Redmi POCO X3 Pro | Android R | LA.UM.9.1.r1-07000-SMxxx0.0 | [vayu-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/vayu-r-oss) |
 | violet-q-oss | Redmi Note 7 Pro | Android Q | LA.UM.8.9.r1-04400-SM6xx.0-1 | [violet-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/violet-q-oss) |
+| topaz-t-oss | Redmi Note 12 | Android T | AU_LINUX_ANDROID_LA.VENDOR.13.2.1.R1.11.00.00.1008.048 | [topaz-t-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/topaz-t-oss) |
