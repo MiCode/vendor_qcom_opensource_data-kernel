@@ -26,6 +26,7 @@
 | psyche-r-oss | Mi 12X | Android R | LA.UM.9.12.r1-08000-SMxx50.0 | [psyche-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/psyche-r-oss) |
 | surya-q-oss | Redmi POCO X3 | Android Q | LA.UM.8.9.r1-09300-SM6xx.0 | [surya-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/surya-q-oss) |
 | sweet-r-oss | Redmi Note 10 Pro | Android R | LA.UM.9.1.r1-06700-SMxxx0.0-1 | [sweet-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/sweet-r-oss) |
+| sweet_k6a-r-oss | Redmi Note 12 Pro | Android R | LA.UM.9.1.r1-06700-SMxxx0.0-1.436288.2.444481.1 |[sweet_k6a-r-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/sweet_k6a-r-oss) |
 | tucana-q-oss | MI CC9 Pro | Android Q | LA.UM.8.9.r1-03800-sm6150.0-1 | [tucana-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/tucana-q-oss) |
 | toco-q-oss | MI Note 10 | Android Q | LA.UM.8.9.r1-03800-sm6150.0-1 | [toco-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/toco-q-oss) |
 | umi-q-oss | Mi 10 Pro, Mi 10 | Android Q | LA.UM.8.12.r1-06000-sm8250.0 | [umi-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/umi-q-oss) |
