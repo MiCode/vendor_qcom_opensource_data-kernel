@@ -21,7 +21,7 @@ KBUILD_OPTIONS += DCONFIG_DEBUGFS_OBJ=1
 
 LOCAL_MODULE      := emac_dwc_eqos.ko
 LOCAL_MODULE_TAGS := optional
-include $(DLKM_DIR)/AndroidKernelModule.mk
+include $(DLKM_DIR)/Build_external_kernelmodule.mk
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := emac_perf_settings.sh
