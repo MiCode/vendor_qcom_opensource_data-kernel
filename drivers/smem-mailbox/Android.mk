@@ -1,3 +1,4 @@
+ifneq (, $(filter $(call get-component-name), miodm))
 # Android makefile for SMEM kernel modules
 ifeq ($(call is-board-platform-in-list,sun), true)
 ifneq (,$(filter arm aarch64 arm64, $(TARGET_ARCH)))
@@ -15,5 +16,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_PATH := $(KERNEL_MODULES_OUT)
 include $(DLKM_DIR)/Build_external_kernelmodule.mk
 
+endif
 endif
 endif

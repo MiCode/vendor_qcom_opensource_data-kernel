@@ -1,3 +1,5 @@
+ifneq (, $(filter $(call get-component-name), miodm))
+
 #This makefile is only to compile EMAC for AUTO platform
 
 ifeq ($(TARGET_BOARD_AUTO),true)
@@ -31,6 +33,7 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_DATA)/emac
 LOCAL_SRC_FILES    := emac_perf_settings.sh
 include $(BUILD_PREBUILT)
 
+endif
 endif
 endif
 

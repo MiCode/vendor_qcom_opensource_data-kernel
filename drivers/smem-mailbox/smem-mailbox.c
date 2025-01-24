@@ -191,7 +191,7 @@ static bool read_client_info_map(void) {
 		new_entry->write_size = write_size;
 
 		// IRQ name is hardcoded
-		strlcpy(new_entry->irq_name, IRQ_NAMES[i], sizeof(new_entry->irq_name));
+		strscpy(new_entry->irq_name, IRQ_NAMES[i], sizeof(new_entry->irq_name));
 
 		INIT_LIST_HEAD(&new_entry->list);
 		list_add_tail(&new_entry->list, &smem_client_channel_list_head);
