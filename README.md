@@ -36,3 +36,4 @@
 | violet-q-oss | Redmi Note 7 Pro | Android Q | LA.UM.8.9.r1-04400-SM6xx.0-1 | [violet-q-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/violet-q-oss) |
 | topaz-t-oss | Redmi Note 12 | Android T | AU_LINUX_ANDROID_LA.VENDOR.13.2.1.R1.11.00.00.1008.048 | [topaz-t-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/topaz-t-oss) |
 | xun-t-oss | Redmi Pad SE | Android T | AU_LINUX_ANDROID_LA.VENDOR.13.2.1.R1.11.00.00.587.064 | [xun-t-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/xun-t-oss) |
+| bsp-miro-v-oss | REDMI K80 PRO | Android V | qcom-LA.VENDOR.14.3.0.r1-14500-r1.0.r1_00042.0 |[bsp-miro-v-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/bsp-miro-v-oss) |
