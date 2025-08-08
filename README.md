@@ -38,3 +38,4 @@
 | xun-t-oss | Redmi Pad SE | Android T | AU_LINUX_ANDROID_LA.VENDOR.13.2.1.R1.11.00.00.587.064 | [xun-t-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/xun-t-oss) |
 | bsp-miro-v-oss | REDMI K80 PRO | Android V | qcom-LA.VENDOR.14.3.0.r1-14500-r1.0.r1_00042.0 |[bsp-miro-v-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/bsp-miro-v-oss) |
 | onyx-v-oss | REDMI Turbo 4 Pro | Android V | LA.VENDOR.15.4.0.r1-15000-r1.0.r1_00044.1 |[onyx-v-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/onyx-v-oss) |
+| bixi-v-oss | Xiaomi MIX Flip 2 | Android V | LA.VENDOR.15.4.0.r1-10100-r1.0.r1_00025.1 |[bixi-v-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/bixi-v-oss) |
