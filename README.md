@@ -39,3 +39,4 @@
 | bsp-miro-v-oss | REDMI K80 PRO | Android V | qcom-LA.VENDOR.14.3.0.r1-14500-r1.0.r1_00042.0 |[bsp-miro-v-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/bsp-miro-v-oss) |
 | onyx-v-oss | REDMI Turbo 4 Pro | Android V | LA.VENDOR.15.4.0.r1-15000-r1.0.r1_00044.1 |[onyx-v-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/onyx-v-oss) |
 | bixi-v-oss | Xiaomi MIX Flip 2 | Android V | LA.VENDOR.15.4.0.r1-10100-r1.0.r1_00025.1 |[bixi-v-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/bixi-v-oss) |
+| creek-v-oss | POCO M7 / Redmi 15 | Android V | Divar.LA.3.0.1 MPSS.HA.1.2-00060-KD_ALL_PACK-1 |[creek-v-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/creek-v-oss) |
