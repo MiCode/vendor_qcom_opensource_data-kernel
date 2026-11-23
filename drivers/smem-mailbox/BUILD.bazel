@@ -1,0 +1,18 @@
+load(":define_modules.bzl", "define_modules")
+
+define_modules("sun", "consolidate")
+define_modules("sun", "perf")
+define_modules("canoe", "consolidate")
+define_modules("canoe", "perf")
+define_modules("hamoa", "consolidate")
+define_modules("hamoa", "perf")
+define_modules("chora", "consolidate")
+define_modules("chora", "perf")
+define_modules("malabar", "consolidate")
+define_modules("malabar", "perf")
+
+package(
+    default_visibility = [
+        "//visibility:public",
+    ],
+)
