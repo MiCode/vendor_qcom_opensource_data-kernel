@@ -50,3 +50,4 @@
 | mist-w-oss | REDMI Note 17 5G/REDMI Note 17/POCO M8 Power 5G | Android W | snapdragon-high-mid-2024-spf-2-0_amss_standard_oem r2.0.r1_00009.1 |[mist-w-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/mist-w-oss) |
 | zephyr-w-oss | REDMI Note 17 | Android W | Snapdragon_Mid_2022.SPF.2.0.2 r2.0.2_00004.0.141968.3 |[zephyr-w-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/zephyr-w-oss) |
 | songyuan-w-oss | POCO F9 Ultra / REDMI K100 Pro Max | Android W | LA.VENDOR.16.2.0.r1-15300-r1.0.r1_000033.0 |[songyuan-w-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/songyuan-w-oss) |
+| shuntian-w-oss | Xiaomi Pad 9 Pro | Android W | LA.VENDOR.16.2.0.r1-15300-r1.0.r1_000033.0 |[shuntian-w-oss](https://github.com/MiCode/vendor_qcom_opensource_data-kernel/tree/shuntian-w-oss) |
